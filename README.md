@@ -12,5 +12,11 @@
 ## Dataset
 - Download data from [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
   
+| Dataset | GroundTruth | AudioFiles |
+|---------|-------------|------------|
+|  Train  |             |       |
+|  Valid  |   624968    |   624968   |
+|  Test   |   625152    |   625152   |
+
 ## References
 - [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
