@@ -13,7 +13,7 @@
 | Dataset | GroundTruth | AudioFiles | Min duration | Max duration | 
 |---------|-------------|------------|--------------|--------------|
 |  Train  |             |            |              |              |
-|  Valid  |   624968    |   624968   |              |              |
+|  Valid  |   624968    |   624968   |    0.0sec    | 134217.77sec |
 |  Test   |   625152    |   625152   |              |              |
 
 ### References
