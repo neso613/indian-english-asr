@@ -13,8 +13,9 @@
 | Dataset | GroundTruth | AudioFiles | Min duration | Max duration | 
 |---------|-------------|------------|--------------|--------------|
 |  Train  |             |            |              |              |
-|  Valid  |   624968    |   624968   |    0.0sec    | 134217.77sec |
+|  Valid  |   624968    |   624968   |     0sec     |     16sec    |
 |  Test   |   625152    |   625152   |              |              |
 
 ### References
 - [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
+- [Nvidia-Tao](https://github.com/NVIDIA-AI-IOT/nvidia-tao)
