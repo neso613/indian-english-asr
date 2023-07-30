@@ -7,7 +7,7 @@
 ### Model
 - [Conformer-CTC](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/asr/models.html#conformer-ctc)
     
-### Dataset
+### Training Dataset
 - Download data from [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
   
 | Dataset | GroundTruth | AudioFiles | Min duration | Max duration | 
@@ -16,6 +16,10 @@
 |  Valid  |   624968    |   624968   |     0sec     |     16sec    |
 |  Test   |   625152    |   625152   |              |              |
 
+### Benchmarking Dataset
+- [Svarah : An Indic accented English speech dataset](https://github.com/AI4Bharat/Svarah/tree/master)
+  
 ### References
 - [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
+- [Svarah : An Indic accented English speech dataset](https://github.com/AI4Bharat/Svarah/tree/master)
 - [Nvidia-Tao](https://github.com/NVIDIA-AI-IOT/nvidia-tao)
