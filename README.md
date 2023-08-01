@@ -10,11 +10,11 @@
 ### Training Dataset
 - Download data from [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
   
-| Dataset | GroundTruth | AudioFiles | Min duration | Max duration | 
-|---------|-------------|------------|--------------|--------------|
-|  Train  |             |            |              |              |
-|  Valid  |   624968    |   624968   |     0sec     |     16sec    |
-|  Test   |   625152    |   625152   |              |              |
+| Dataset | GroundTruth | AudioFiles | Min duration | Max duration | Total Hours | 
+|---------|-------------|------------|--------------|--------------|-------------|
+|  Train  |             |            |              |              |             |
+|  Valid  |   624968    |   624968   |     0sec     |     16sec    |  1235 hours |
+|  Test   |   625152    |   625152   |              |              |             |
 
 ### Benchmarking Dataset
 - [Svarah : An Indic accented English speech dataset](https://github.com/AI4Bharat/Svarah/tree/master)
