@@ -1,7 +1,7 @@
 ## indian-english-asr
 
 ### How to train ASR model on custom data
-##### Finetuning using TAO
+##### Train/Finetuning using TAO
 - Speech to Text training [reference](https://docs.nvidia.com/tao/tao-toolkit/text/asr/speech_recognition_with_conformer.html)
   
 ### Model
@@ -18,6 +18,7 @@
 
 ### Benchmarking Dataset
 - [Svarah : An Indic accented English speech dataset](https://github.com/AI4Bharat/Svarah/tree/master)
+- NPTEL-Pure Dataset
   
 ### References
 - [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
