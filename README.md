@@ -18,7 +18,7 @@
 | Dataset | GroundTruth | AudioFiles | Min duration | Max duration | Total Hours | 
 |---------|-------------|------------|--------------|--------------|-------------|
 |  Train  |             |            |              |              |             |
-|  Valid  |   624968    |   624968   |     0sec     |     16sec    |  1235 hours |
+|  Valid  |   624968    |   624968   |     0sec     |     16sec    |   1295.84   |
 |  Test   |   625152    |   625152   |              |              |             |
 
 ### Benchmarking Dataset
