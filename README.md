@@ -19,7 +19,7 @@
 |---------|-------------|------------|--------------|--------------|-------------|
 |  Train  |             |            |              |              |             |
 |  Valid  |   624968    |   624968   |     0sec     |     16sec    |   1295.84   |
-|  Test   |   625152    |   625152   |              |              |             |
+|  Test   |   625152    |   625152   |     0sec     |              |   1335.74   |
 
 ### Benchmarking Dataset
 - [Svarah : An Indic accented English speech dataset](https://github.com/AI4Bharat/Svarah/tree/master)
