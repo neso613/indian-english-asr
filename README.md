@@ -13,7 +13,9 @@
 ### Checkpoints
 |   Language   | Checkpoint | WER |
 |--------------|------------|-----|
-|Indian-English|            |     |   
+|Indian-English|  [link]()  |18.17|  
+
+WER evaulated using NPTEL-Pure-Dataset (later will include other dataset)
     
 ### Training Dataset
 - Download data from [NPTEL2020 - Indian English Speech Dataset](https://github.com/AI4Bharat/NPTEL2020-Indian-English-Speech-Dataset)
