@@ -13,7 +13,7 @@
 ### Checkpoints
 |   Language   | Checkpoint | WER |
 |--------------|------------|-----|
-|Indian-English|  [link]()  |18.17|  
+|Indian-English|  [link](https://drive.google.com/file/d/1psieM9Mq_xFkr2RQgdIPuKX9e36wFBPf/view?usp=sharing)  |18.17|  
 
 WER evaulated using NPTEL-Pure-Dataset (later will include other dataset)
     
