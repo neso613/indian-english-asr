@@ -1,0 +1,42 @@
+Step 1. Pull docker images for TAO toolkit
+        >> sudo docker pull nvcr.io/nvidia/tao/tao-toolkit:4.0.0-pyt
+Step 2. Create container using docker images
+        >> sudo docker run -it --gpus all -v /your_local_working_dir/:/workspace/ nvcr.io/nvidia/tao/tao-toolkit:4.0.0-pyt 
+Step 3. Once docker container created, download specification files used in the training/finetuning
+        >> speech_to_text_conformer download_specs -r results/speech_to_text_conformer -o specs/speech_to_text_conformer
+Step 4. Dataset should have .wav files and manifest file should be in specific format like below - 
+        {"audio_filepath": "data/dataset/nptel-pure/wav/0000003b8fd9bc22877135b42b04c49d4860312b001be688723ecc5d.wav", "duration": 5.008, "text": "in this particular session we will be discussing how to benchmark something that i got to"}
+        {"audio_filepath": "data/dataset/nptel-pure/wav/00000682f31904acc560fa359512e7bdd487b11efe36145a56874e30.wav", "duration": 7.71, "text": "electric field like this why because first of all this electric field intern creates"}
+        {"audio_filepath": "data/dataset/nptel-pure/wav/0000068bfcd8e252fd9ec8225bd1fdb47378a009f8afa00d4e998df5.wav", "duration": 14.589, "text": "two z invariant map ah j tilde so that the following diagrams"}
+        {"audio_filepath": "data/dataset/nptel-pure/wav/000009ed98ed39118493c10c8cf25ec9a6a936bd6cc6e527c29dccec.wav", "duration": 10.351, "text": "then you put basis elements here ok and then you add a so since these are all basis vectors"}
+        {"audio_filepath": "data/dataset/nptel-pure/wav/00000da4b2da194ac31f6d1466d2ceb4823bdc263efa81004ee89464.wav", "duration": 6.857, "text": "this is a very important signal in that a sinusoid is closely related to this this"}
+        {"audio_filepath": "data/dataset/nptel-pure/wav/00000e944e581a66136c69bc1f89b8a1dd5f70a87fd39b1ea23cf0d1.wav", "duration": 8.959, "text": "okay so here you see we have two configuration here"}
+        {"audio_filepath": "data/dataset/nptel-pure/wav/000014a01678b2c8167bd03f3ca29924365d67d0b5373a1175ad5f46.wav", "duration": 6.3114375, "text": "increases below the freshwater layer okay"}
+Step 5. Create tokenier for your dataset
+        >> speech_to_text_conformer create_tokenizer \
+            -e specs/speech_to_text_conformer/create_tokenizer.yaml \
+            -r results/conformer/create_tokenizer \
+            manifests=data/dataset/train_manifest.json  \
+            output_root=data/dataset \
+            vocab_size=32
+Step 6. Finetune using this command
+        speech_to_text_conformer finetune \
+        -e specs/speech_to_text_conformer/finetune.yaml \
+        -g -1 \
+        -k tlt_encode \
+        -m stt_en_conformer_ctc_medium.tlt \
+        -r results/conformer/finetune \
+        finetuning_ds.manifest_filepath=data/dataset/train_manifest.json \
+        validation_ds.manifest_filepath=data/dataset/test_manifest.json \
+        trainer.max_epochs=1 \
+        finetuning_ds.num_workers=20 \
+        validation_ds.num_workers=20 \
+        tokenizer.dir=data/dataset/tokenizer_spe_unigram_v32
+Step 7. Evaluate using this command
+        speech_to_text_conformer evaluate \
+        -e specs/speech_to_text_conformer/evaluate.yaml \
+        -g 1 \
+        -k tlt_encode \
+        -m model_path.tlt \
+        -r results/conformer/evaluate \
+        test_ds.manifest_filepath=data/dataset/test_manifest.json
