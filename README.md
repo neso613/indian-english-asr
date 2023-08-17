@@ -2,7 +2,7 @@
 
 ### How to train ASR model on custom data
 ##### Training/Finetuning using Nvidia's TAO
-- Speech to Text training 
+- Speech to Text [training](https://github.com/neso613/indian-english-asr/blob/main/scripts/steps_for_finetuning_using_tao.txt)
   
 ##### Training/Finetuning using Nvidia's NeMo
 - Conformer SSL [reference](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/ssl_en_conformer_large)
