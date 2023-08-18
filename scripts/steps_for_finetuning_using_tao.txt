@@ -20,7 +20,7 @@ Step 5. Create tokenier for your dataset
             output_root=data/dataset \
             vocab_size=32
 Step 6. Finetune using this command
-        speech_to_text_conformer finetune \
+        >> speech_to_text_conformer finetune \
         -e specs/speech_to_text_conformer/finetune.yaml \
         -g -1 \
         -k tlt_encode \
@@ -33,7 +33,7 @@ Step 6. Finetune using this command
         validation_ds.num_workers=20 \
         tokenizer.dir=data/dataset/tokenizer_spe_unigram_v32
 Step 7. Evaluate using this command
-        speech_to_text_conformer evaluate \
+        >> speech_to_text_conformer evaluate \
         -e specs/speech_to_text_conformer/evaluate.yaml \
         -g 1 \
         -k tlt_encode \
