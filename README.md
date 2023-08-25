@@ -22,7 +22,7 @@ WER evaulated using NPTEL-Pure-Dataset (later will include other dataset)
   
 | Dataset | GroundTruth | AudioFiles | Min duration | Max duration | Total Hours | 
 |---------|-------------|------------|--------------|--------------|-------------|
-|  Train  |             |            |              |              |             |
+|  Train  |   4937516   |   4937516  |     0sec     |              |  10369.33   |
 |  Valid  |   624968    |   624968   |     0sec     |     16sec    |   1295.84   |
 |  Test   |   625152    |   625152   |     0sec     |              |   1335.74   |
 
